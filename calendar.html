@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/calendar.css">
+	<script src="js/jquery-1.5.1.js" type="text/javascript"></script>
+	<script src="js/plug-calendar.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function () {
+        $("#inputcal").calinitFrame();
+        $("#incal").calinitFrame();
+        $("#incalsss").calinitFrame();
+    });
+    //下面三种写法一样，在DOM加载完成后执行
+    // $(function(){//do something
+    // })
+    // $(document).ready(function(){//do something
+    // })
+    // $().ready(function(){//do something
+    // })
+
+    </script>	
+</head>
+<body>
+    <input type="text" id="incal" style="margin-left:100px;padding:30px;"/>
+	<input type="text" id="inputcal" style="margin-left:100px;padding:30px;"/>
+    <input type="text" id="incalsss" style="margin-left:100px;padding:30px;"/>  
+</body>
+</html>
